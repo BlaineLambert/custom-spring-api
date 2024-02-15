@@ -13,15 +13,15 @@ import lombok.NoArgsConstructor;
 import java.lang.annotation.Annotation;
 
 @Entity
-@Table(name = "person")
+@Table(name = "movie")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Person {
+public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private String firstname;
-    private String lastname;
-    private String phonenumber;
+    private String name;
+    private String director;
+    private Double price;
 }
